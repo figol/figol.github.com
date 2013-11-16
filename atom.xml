@@ -4,7 +4,7 @@
   <title><![CDATA[Figol Comes Here]]></title>
   <link href="http://figol.github.io/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2013-11-16T09:55:37+08:00</updated>
+  <updated>2013-11-16T11:18:02+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -18,7 +18,13 @@
     <link href="http://figol.github.io/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai/"/>
     <updated>2013-11-16T09:30:00+08:00</updated>
     <id>http://figol.github.io/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<pre>
+    <code class="python">
+$ cd octopress
+$ rake install
+    </code>
+</pre>
+
 ]]></content>
   </entry>
   
