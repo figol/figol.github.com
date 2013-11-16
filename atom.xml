@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Figol Comes Here]]></title>
   <link href="http://figol.github.io/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2013-11-16T09:18:17+08:00</updated>
+  <updated>2013-11-16T09:30:53+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Figol Liu]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[推荐几本计算机经典教材]]></title>
+    <link href="http://figol.github.io/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai/"/>
+    <updated>2013-11-16T09:30:00+08:00</updated>
+    <id>http://figol.github.io/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
