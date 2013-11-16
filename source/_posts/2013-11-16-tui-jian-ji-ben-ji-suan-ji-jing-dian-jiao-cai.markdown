@@ -5,3 +5,9 @@ date: 2013-11-16 09:30
 comments: true
 categories: 
 ---
+<pre>
+	<code class="python">
+$ cd octopress
+$ rake install
+	</code>
+</pre>
