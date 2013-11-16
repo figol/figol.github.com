@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Figol Comes Here]]></title>
-  <link href="http://figol.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: gossip | Figol Comes Here]]></title>
+  <link href="http://figol.github.io/blog/categories/gossip/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
   <updated>2013-11-16T11:46:55+08:00</updated>
   <id>http://figol.github.io/</id>
