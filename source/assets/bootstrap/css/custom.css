@@ -839,3 +839,7 @@ form.well {
 .tooltip-inner {
 	max-width: 500px;
 }
+
+.text_align_center{
+	text-align: center;
+}
