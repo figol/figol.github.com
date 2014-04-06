@@ -5,11 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>推荐几本计算机经典教材 - Figol Comes Here</title>
+  <title>Linux上安装及部署Openerp 7.0 + Apache + SSL - Figol Comes Here</title>
   <meta name="author" content="Figol Liu">
 
   
-  <meta name="description" content="Unix环境高级编程(2nd) 作者：W.Richard Stevens 简介： 本书是被誉为UNIX编程“圣经”的Advanced Programming in the UNIX Environment一书的更新版。在本书第1版出版后的十几年中，UNIX行业已经有了巨大的变化， &hellip;">
+  <meta name="description" content="本文将主要介绍以下几点：
+1. 在Centos 6.4上Openerp安装方法
+2. 在Centos 6.4上apache 2.4安装方法
+3. 以apache代理+SSL方式访问Openerpr的配置方法 安装环境：CentOS 6.5 64bit，不保证在其它环境下本方法能安装成功。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://figol.github.io/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai">
+  <link rel="canonical" href="http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl">
   <link href="/favicon.png" rel="icon">
   
   <link href="/assets/bootstrap/css/spacelab.min.css" rel="stylesheet" type="text/css">
@@ -94,7 +97,7 @@
     
   <header>
     
-      <h1 class="entry-title">推荐几本计算机经典教材</h1>
+      <h1 class="entry-title">Linux上安装及部署Openerp 7.0 + Apache + SSL</h1>
     
     
       <p class="meta">
@@ -110,7 +113,7 @@
   
 
 
-<time datetime="2013-11-16T09:30:00+08:00" pubdate data-updated="true">Nov 16<span>th</span>, 2013</time>
+<time datetime="2014-04-05T09:16:00+08:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
         
       </p>
     
@@ -119,26 +122,25 @@
 
   
   
-  <div class="entry-content"><pre>
-    <code class="python">
-<h3>Unix环境高级编程(2nd)</h3>
-    作者：W.Richard Stevens
-    简介：
-        本书是被誉为UNIX编程“圣经”的Advanced Programming in the UNIX Environment一书的更新版。在本书第1版出版后的十几年中，UNIX行业已经有了巨大的变化，特别是影响UNIX编程接口的有关标准变化很大。本书在保持了前一版的风格的基础上，根据最新的标准对内容进行了修订和增补，反映了最新的技术发展。书中除了介绍UNIX文件和目录、标准I/O库、系统数据文件和信息、进程环境、进程控制、进程关系、信号、线程、线程控制、守护进程、各种I/O、进程间通信、网络IPC、伪终端等方面的内容，还在此基础上介绍了多个应用示例，包括如何创建数据库函数库以及如何与网络打印机通信等。此外，还在附录中给出了函数原型和部分习题的答案。
-本书内容权威，概念清晰，阐述精辟，对于所有层次UNIX程序员都是一本不可或缺的参考书。
-<br /><h3>大话设计模式</h3>
-    作者: 程杰，高级软件工程师,高级培训讲师
-    简介:
-        本书通篇都是以情景对话的形式，用多个小故事或编程示例来组织讲解GoF（设计模式的经典名著——DesignPatterns：ElementsofReusableObject-OrientedSoftware，中译本名为《设计模式——可复用面向对象软件的基础》的四位作者ErichGamma、RichardHelm、RalphJohnson，以及JohnVlissides，这四人常被称为GangofFour，即四人组，简称GoF）总结的23个设计模式。本书共分为29章。其中，第1、3、4、5章着重讲解了面向对象的意义、好处以及几个重要的设计原则；第2章，以及第6到第28章详细讲解了23个设计模式；第29章是对设计模式的全面总结。附录部分是通过一个例子的演变为初学者介绍了面向对象的基本概念。本书的特色是通过小菜与大鸟的趣味问答，在讲解程序的不断重构和演变过程中，把设计模式的学习门槛降低，让初学者可以更加容易地理解——为什么这样设计才是好的？是怎样想到这样设计的？以达到不但授之以“鱼”，还授之以“渔”的目的。引导读者体会设计演变过程中蕴藏的大智慧。 
-<br /><h3>算法导论</h3>
-    作者: Thomas H.Cormen, Charles E.Leiserson, Ronald L.Rivest, Clifford Stein
-    简介: 
-        算法导论自第一版出版以来，已经成为世界范围内广泛使用的大学教材和专业人员的标准参考手册。本书全面论述了算法的内容，从一定深度上涵盖了算法的诸多方面，同时其讲授和分析方法又兼顾了各个层次读者的接受能力。
-    </code>
+  <div class="entry-content"><pre>本文将主要介绍以下几点：
+1. <h2>在Centos 6.4上Openerp安装方法</h2>
+2. <h2>在Centos 6.4上apache 2.4安装方法</h2>
+3. <h2>以apache代理+SSL方式访问Openerpr的配置方法</h2>
 </pre>
 
 
+<h3>安装环境：CentOS 6.5 64bit，不保证在其它环境下本方法能安装成功。</h3>
 
+
+<p><p>假设已经将openerp-7.0.tar.gz、postgresql-9.2.1.tar.gz、pcre-8.32.zip、apr-1.4.5.tar.gz、apr-util-1.5.1.tar.gz上传至server。
+<pre></p>
+
+<pre><code>&lt;code class="python"&gt;
+
+&lt;/code&gt;
+</code></pre>
+
+<p></pre></p>
 </div>
 
   
@@ -163,12 +165,12 @@
   
 
 
-<time datetime="2013-11-16T09:30:00+08:00" pubdate data-updated="true">Nov 16<span>th</span>, 2013</time>
+<time datetime="2014-04-05T09:16:00+08:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
         
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/gossip/'>gossip</a>
+    <a class='category' href='/blog/categories/openerp/'>openerp</a>
   
 </span>
 
@@ -178,7 +180,7 @@
         <div class="sharing">
   <br/>
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://figol.github.io/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai/" data-via="" data-counturl="http://figol.github.io/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl/" data-via="" data-counturl="http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl/" >Tweet</a>
   
   
   
@@ -187,8 +189,8 @@
       
       <p class="meta">
         
+          <a class="basic-alignment pull-left" href="/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai/" title="Previous Post: 推荐几本计算机经典教材">&laquo; 推荐几本计算机经典教材</a>
         
-          <a class="basic-alignment pull-right" href="/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl/" title="Next Post: Linux上安装及部署Openerp 7.0 + Apache + SSL">Linux上安装及部署Openerp 7.0 + Apache + SSL &raquo;</a>
         
       </p>
     </footer>

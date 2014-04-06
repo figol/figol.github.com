@@ -4,7 +4,7 @@
   <title><![CDATA[Figol Comes Here]]></title>
   <link href="http://figol.github.io/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2013-11-19T22:28:57+08:00</updated>
+  <updated>2014-04-06T12:13:56+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Linux上安装及部署Openerp 7.0 + Apache + SSL]]></title>
+    <link href="http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl/"/>
+    <updated>2014-04-05T09:16:00+08:00</updated>
+    <id>http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl</id>
+    <content type="html"><![CDATA[<pre>本文将主要介绍以下几点：
+1. <h2>在Centos 6.4上Openerp安装方法</h2>
+2. <h2>在Centos 6.4上apache 2.4安装方法</h2>
+3. <h2>以apache代理+SSL方式访问Openerpr的配置方法</h2>
+</pre>
+
+
+<h3>安装环境：CentOS 6.5 64bit，不保证在其它环境下本方法能安装成功。</h3>
+
+
+<p><p>假设已经将openerp-7.0.tar.gz、postgresql-9.2.1.tar.gz、pcre-8.32.zip、apr-1.4.5.tar.gz、apr-util-1.5.1.tar.gz上传至server。
+<pre></p>
+
+<pre><code>&lt;code class="python"&gt;
+
+&lt;/code&gt;
+</code></pre>
+
+<p></pre></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[推荐几本计算机经典教材]]></title>
