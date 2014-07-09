@@ -9,7 +9,7 @@
   <meta name="author" content="Figol Liu">
 
   
-  <meta name="description" content="最近群有经常有人发问，你做的是什么模块，感觉好酷哦。 其实只是应用了一点点openerp web模块的东西； 这个东西就是openerp封装的dialog，它可以弹出犹如wizard的对话框,使界面变得高大上； 具体调用方法如下： var dialog = new instance.web. &hellip;">
+  <meta name="description" content=" 我只想说这本书能拉开程序员之间的水平； > 强烈推荐！！！ ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -52,7 +52,7 @@
 
 <h1 class="title">Figol -- a stupid coder</h1>
 
-  <p class="lead">学习知识要关于思考，思考，再思考；</p>
+  <p class="lead">学习知识要善于思考，思考，再思考；</p>
 
 
       <div class="navbar">
@@ -97,6 +97,46 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/07/09/httpquan-wei-jie-du/">Http权威解读</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-09T17:43:00+08:00" pubdate data-updated="true">Jul 9<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>
+    我只想说这本书能拉开程序员之间的水平；
+    <<http权威解读>> 强烈推荐！！！
+</h3>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/07/09/ru-he-zai-openerp-web-modulezhong-shi-yong-dialog/">如何在openerp Web Module中使用dialog</a></h1>
     
     
@@ -130,19 +170,17 @@
 </pre>
 
 
-<p><code></p>
-
-<pre><code>var dialog = new instance.web.Dialog(self,{
-    title: 'Scanner Error', autoOpen:true, width:700, resizable:false, modal:true,
-    buttons:{
-        "Close": function () {
-            _dialog.destroy();
+<pre>
+    var dialog = new instance.web.Dialog(self,{
+        title: 'Scanner Error', autoOpen:true, width:700, resizable:false, modal:true,
+        buttons:{
+            "Close": function () {
+                _dialog.destroy();
+            }
         }
-    }
-}, '&lt;h1&gt;hello world!&lt;/h1&gt;');
-</code></pre>
+    }, '<h1>hello world!</h1>');
+</pre>
 
-<p></code></p>
 </div>
   
   
@@ -343,6 +381,10 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
         <section>
   <h2>Recent Posts</h2>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/09/httpquan-wei-jie-du/">http权威解读</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/07/09/ru-he-zai-openerp-web-modulezhong-shi-yong-dialog/">如何在openerp web module中使用dialog</a>
