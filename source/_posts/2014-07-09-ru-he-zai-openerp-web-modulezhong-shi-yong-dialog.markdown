@@ -11,7 +11,7 @@ categories:
 	这个东西就是openerp封装的dialog，它可以弹出犹如wizard的对话框,使界面变得高大上；
 	具体调用方法如下：
 </pre>
-<code>
+<pre>
 	var dialog = new instance.web.Dialog(self,{
     	title: 'Scanner Error', autoOpen:true, width:700, resizable:false, modal:true,
         buttons:{
@@ -20,4 +20,4 @@ categories:
            	}
        	}
     }, '<h1>hello world!</h1>');
-</code>
+</pre>
