@@ -4,7 +4,7 @@
   <title><![CDATA[Figol -- a stupid coder]]></title>
   <link href="http://figol.github.io/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2014-07-09T17:10:14+08:00</updated>
+  <updated>2014-07-09T17:12:12+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -20,14 +20,14 @@
     <id>http://figol.github.io/blog/2014/07/09/percentage-widget-for-openerp7-dot-0</id>
     <content type="html"><![CDATA[<pre>
     <h3>Percentage Widget 简介</h3>
-    <p>
+    <div>
         percentage widget是一个基于Openerp 7.0的WEB模块，能将数值以百分比的形式呈现给用户；
         同时支持List View 和 Form View.
-    </p>
+    </div>
     <h3>项目地址：</h3>
-    <p>
+    <div>
         https://github.com/figol/percentage_widget  
-    </p>
+    </div>
 </pre>
 
 ]]></content>
