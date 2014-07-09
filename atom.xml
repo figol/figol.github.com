@@ -4,7 +4,7 @@
   <title><![CDATA[Figol -- a stupid coder]]></title>
   <link href="http://figol.github.io/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2014-07-09T17:12:12+08:00</updated>
+  <updated>2014-07-09T17:34:46+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -14,20 +14,55 @@
 
   
   <entry>
+    <title type="html"><![CDATA[如何在openerp web module中使用dialog]]></title>
+    <link href="http://figol.github.io/blog/2014/07/09/ru-he-zai-openerp-web-modulezhong-shi-yong-dialog/"/>
+    <updated>2014-07-09T17:25:00+08:00</updated>
+    <id>http://figol.github.io/blog/2014/07/09/ru-he-zai-openerp-web-modulezhong-shi-yong-dialog</id>
+    <content type="html"><![CDATA[<h3>最近群有经常有人发问，你做的是什么模块，感觉好酷哦。</h3>
+
+
+<pre>
+    其实只是应用了一点点openerp web模块的东西；
+    这个东西就是openerp封装的dialog，它可以弹出犹如wizard的对话框,使界面变得高大上；
+    具体调用方法如下：
+</pre>
+
+
+<p><code></p>
+
+<pre><code>var dialog = new instance.web.Dialog(self,{
+    title: 'Scanner Error', autoOpen:true, width:700, resizable:false, modal:true,
+    buttons:{
+        "Close": function () {
+            _dialog.destroy();
+        }
+    }
+}, '&lt;h1&gt;hello world!&lt;/h1&gt;');
+</code></pre>
+
+<p></code></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[percentage widget for openerp7.0]]></title>
     <link href="http://figol.github.io/blog/2014/07/09/percentage-widget-for-openerp7-dot-0/"/>
     <updated>2014-07-09T16:40:00+08:00</updated>
     <id>http://figol.github.io/blog/2014/07/09/percentage-widget-for-openerp7-dot-0</id>
-    <content type="html"><![CDATA[<pre>
-    <h3>Percentage Widget 简介</h3>
-    <div>
-        percentage widget是一个基于Openerp 7.0的WEB模块，能将数值以百分比的形式呈现给用户；
-        同时支持List View 和 Form View.
-    </div>
-    <h3>项目地址：</h3>
-    <div>
-        https://github.com/figol/percentage_widget  
-    </div>
+    <content type="html"><![CDATA[<h3>Percentage Widget简介</h3>
+
+
+<pre>
+    percentage widget是一个基于Openerp 7.0的WEB模块，能将数值以百分比的形式呈现给用户；
+    同时支持List View 和 Form View.
+</pre>
+
+
+<h3>项目地址：</h3>
+
+
+<pre>
+    https://github.com/figol/percentage_widget  
 </pre>
 
 ]]></content>
