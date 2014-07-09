@@ -12,5 +12,5 @@ categories:
 </pre>
 <h3>项目地址：</h3>
 <pre>
-https://github.com/figol/percentage_widget	
+	https://github.com/figol/percentage_widget	
 </pre>
