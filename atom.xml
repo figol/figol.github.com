@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Figol Comes Here]]></title>
+  <title><![CDATA[Figol -- a stupid coder]]></title>
   <link href="http://figol.github.io/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2014-07-09T16:29:48+08:00</updated>
+  <updated>2014-07-09T17:08:17+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[percentage widget for openerp7.0]]></title>
+    <link href="http://figol.github.io/blog/2014/07/09/percentage-widget-for-openerp7-dot-0/"/>
+    <updated>2014-07-09T16:40:00+08:00</updated>
+    <id>http://figol.github.io/blog/2014/07/09/percentage-widget-for-openerp7-dot-0</id>
+    <content type="html"><![CDATA[<pre>
+    <h3>Percentage Widget 简介</h3>
+    <p>
+        percentage widget是一个基于Openerp 7.0的WEB模块，能将数值以百分比的形式呈现给用户；
+        同时支持List View 和 Form View.
+    </p>
+    <h3>项目地址：</h3>
+    <p>
+        https://github.com/figol/percentage_widget  
+    </p>
+</pre>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Linux上安装及部署Openerp 7.0 + Apache + SSL]]></title>

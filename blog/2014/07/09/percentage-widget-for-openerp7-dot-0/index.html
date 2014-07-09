@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Linux上安装及部署Openerp 7.0 + Apache + SSL - Figol -- a stupid coder</title>
+  <title>percentage widget for openerp7.0 - Figol -- a stupid coder</title>
   <meta name="author" content="Figol Liu">
 
   
-  <meta name="description" content="本文将主要介绍以下几点：
-1. 在Centos 6.4上Openerp安装方法
-2. 在Centos 6.4上apache 2.4安装方法
-3. 以apache代理+SSL方式访问Openerpr的配置方法 安装环境：CentOS 6.5 64bit，不保证在其它环境下本方法能安装成功。 &hellip;">
+  <meta name="description" content="Percentage Widget 简介 percentage widget是一个基于Openerp 7.0的WEB模块，能将数值以百分比的形式呈现给用户； 同时支持List View 和 Form View. 项目地址： https://github.com/figol/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl">
+  <link rel="canonical" href="http://figol.github.io/blog/2014/07/09/percentage-widget-for-openerp7-dot-0">
   <link href="/favicon.png" rel="icon">
   
   <link href="/assets/bootstrap/css/spacelab.min.css" rel="stylesheet" type="text/css">
@@ -97,7 +94,7 @@
     
   <header>
     
-      <h1 class="entry-title">Linux上安装及部署Openerp 7.0 + Apache + SSL</h1>
+      <h1 class="entry-title">Percentage Widget for openerp7.0</h1>
     
     
       <p class="meta">
@@ -113,7 +110,7 @@
   
 
 
-<time datetime="2014-04-05T09:16:00+08:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
+<time datetime="2014-07-09T16:40:00+08:00" pubdate data-updated="true">Jul 9<span>th</span>, 2014</time>
         
       </p>
     
@@ -122,44 +119,18 @@
 
   
   
-  <div class="entry-content"><pre>本文将主要介绍以下几点：
-1. 在Centos 6.4上Openerp安装方法
-2. 在Centos 6.4上apache 2.4安装方法
-3. 以apache代理+SSL方式访问Openerpr的配置方法
+  <div class="entry-content"><pre>
+    <h3>Percentage Widget 简介</h3>
+    <p>
+        percentage widget是一个基于Openerp 7.0的WEB模块，能将数值以百分比的形式呈现给用户；
+        同时支持List View 和 Form View.
+    </p>
+    <h3>项目地址：</h3>
+    <p>
+        https://github.com/figol/percentage_widget  
+    </p>
 </pre>
 
-
-<h3>安装环境：CentOS 6.5 64bit，不保证在其它环境下本方法能安装成功。</h3>
-
-
-<p><p>假设已经将openerp-7.0.tar.gz、postgresql-9.2.1.tar.gz、pcre-8.32.zip、apr-1.4.5.tar.gz、apr-util-1.5.1.tar.gz上传至server。
-<code class="python"></p>
-
-<pre><code>&lt;VirtualHost *:443&gt;
- ServerName openerp.servername.com
- SSLEngine On
- SSLCertificateFile /etc/apache2/ssl/server.crt
- SSLCertificateKeyFile /etc/apache2/ssl/server.key
- ProxyRequests Off
- &lt;Proxy *&gt;
-     Order deny,allow
-     Allow from all
- &lt;/Proxy&gt;
- ProxyVia On
-ProxyPass / http://127.0.0.1:8069/
-&lt;location / &gt;
-    ProxyPassReverse /  
-&lt;/location&gt;
-RequestHeader set "X-Forwarded-Proto" "https"
-#Fix IE problem (httpapache proxy dav error 408/409)
-SetEnv proxy-nokeepalive 1
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-&lt;/VirtualHost&gt;
-</code></pre>
-
-<p></code></p>
 </div>
 
   
@@ -184,14 +155,8 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
   
 
 
-<time datetime="2014-04-05T09:16:00+08:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
+<time datetime="2014-07-09T16:40:00+08:00" pubdate data-updated="true">Jul 9<span>th</span>, 2014</time>
         
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/openerp/'>openerp</a>
-  
-</span>
 
 
       </p>
@@ -199,7 +164,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
         <div class="sharing">
   <br/>
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl/" data-via="" data-counturl="http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://figol.github.io/blog/2014/07/09/percentage-widget-for-openerp7-dot-0/" data-via="" data-counturl="http://figol.github.io/blog/2014/07/09/percentage-widget-for-openerp7-dot-0/" >Tweet</a>
   
   
   
@@ -208,10 +173,8 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
       
       <p class="meta">
         
-          <a class="basic-alignment pull-left" href="/blog/2013/11/16/tui-jian-ji-ben-ji-suan-ji-jing-dian-jiao-cai/" title="Previous Post: 推荐几本计算机经典教材">&laquo; 推荐几本计算机经典教材</a>
+          <a class="basic-alignment pull-left" href="/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl/" title="Previous Post: Linux上安装及部署Openerp 7.0 + Apache + SSL">&laquo; Linux上安装及部署Openerp 7.0 + Apache + SSL</a>
         
-        
-          <a class="basic-alignment pull-right" href="/blog/2014/07/09/percentage-widget-for-openerp7-dot-0/" title="Next Post: percentage widget for openerp7.0">percentage widget for openerp7.0 &raquo;</a>
         
       </p>
     </footer>
