@@ -4,7 +4,7 @@
   <title><![CDATA[Category: openerp | Figol Comes Here]]></title>
   <link href="http://figol.github.io/blog/categories/openerp/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2014-04-06T12:13:56+08:00</updated>
+  <updated>2014-07-09T16:29:48+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -19,9 +19,9 @@
     <updated>2014-04-05T09:16:00+08:00</updated>
     <id>http://figol.github.io/blog/2014/04/05/linuxshang-an-zhuang-ji-bu-shu-openerp-plus-apache-plus-ssl</id>
     <content type="html"><![CDATA[<pre>本文将主要介绍以下几点：
-1. <h2>在Centos 6.4上Openerp安装方法</h2>
-2. <h2>在Centos 6.4上apache 2.4安装方法</h2>
-3. <h2>以apache代理+SSL方式访问Openerpr的配置方法</h2>
+1. 在Centos 6.4上Openerp安装方法
+2. 在Centos 6.4上apache 2.4安装方法
+3. 以apache代理+SSL方式访问Openerpr的配置方法
 </pre>
 
 
@@ -29,14 +29,33 @@
 
 
 <p><p>假设已经将openerp-7.0.tar.gz、postgresql-9.2.1.tar.gz、pcre-8.32.zip、apr-1.4.5.tar.gz、apr-util-1.5.1.tar.gz上传至server。
-<pre></p>
+<code class="python"></p>
 
-<pre><code>&lt;code class="python"&gt;
-
-&lt;/code&gt;
+<pre><code>&lt;VirtualHost *:443&gt;
+ ServerName openerp.servername.com
+ SSLEngine On
+ SSLCertificateFile /etc/apache2/ssl/server.crt
+ SSLCertificateKeyFile /etc/apache2/ssl/server.key
+ ProxyRequests Off
+ &lt;Proxy *&gt;
+     Order deny,allow
+     Allow from all
+ &lt;/Proxy&gt;
+ ProxyVia On
+ProxyPass / http://127.0.0.1:8069/
+&lt;location / &gt;
+    ProxyPassReverse /  
+&lt;/location&gt;
+RequestHeader set "X-Forwarded-Proto" "https"
+#Fix IE problem (httpapache proxy dav error 408/409)
+SetEnv proxy-nokeepalive 1
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+&lt;/VirtualHost&gt;
 </code></pre>
 
-<p></pre></p>
+<p></code></p>
 ]]></content>
   </entry>
   
