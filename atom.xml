@@ -4,7 +4,7 @@
   <title><![CDATA[Figol -- a stupid coder]]></title>
   <link href="http://figol.github.io/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2014-07-09T17:50:29+08:00</updated>
+  <updated>2014-07-09T17:54:11+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -19,9 +19,15 @@
     <updated>2014-07-09T17:43:00+08:00</updated>
     <id>http://figol.github.io/blog/2014/07/09/httpquan-wei-jie-du</id>
     <content type="html"><![CDATA[<h3>
-    我只想说这本书能拉开程序员之间的水平；
-    <<http权威解读>> 强烈推荐！！！
+    我只想说这本书能拉开程序员之间的水平；<br />
+    《http权威解读》 强烈推荐！！！
 </h3>
+
+
+<br />
+
+
+<br />
 
 ]]></content>
   </entry>
@@ -49,7 +55,7 @@
                 _dialog.destroy();
             }
         }
-    }, '<h1>hello world!</h1>');
+    }, 'hello world!');
 </pre>
 
 ]]></content>
