@@ -18,7 +18,7 @@ Web Scanner Module For Odoo 7.0
 web_scanner是一个典型的odoo web模块.
 此模块包括了以下知识点:
 1. web模块开发方法,下载安装即可.
-2. dialog, blockUI, backbone, Qwb Template; 
+2. dialog, blockUI, backbone, Qweb Template; 
 3. odoo中, js调用python code的方法;
 4. 一个简单的扫描枪应用实例;
 </pre>
