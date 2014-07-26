@@ -4,7 +4,7 @@
   <title><![CDATA[Figol -- a stupid coder]]></title>
   <link href="http://figol.github.io/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2014-07-26T17:28:05+08:00</updated>
+  <updated>2014-07-26T17:33:26+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -14,16 +14,27 @@
 
   
   <entry>
-    <title type="html"><![CDATA[odoo web module demo]]></title>
+    <title type="html"><![CDATA[odoo web module scanner]]></title>
     <link href="http://figol.github.io/blog/2014/07/26/odoo-web-module-demo/"/>
     <updated>2014-07-26T16:56:00+08:00</updated>
     <id>http://figol.github.io/blog/2014/07/26/odoo-web-module-demo</id>
-    <content type="html"><![CDATA[<h3>Web Scanner Module</h3>
+    <content type="html"><![CDATA[<h3>项目名称</h3>
 
 
 <pre>
-    项目地址: https://github.com/figol/web_scanner
+Web Scanner Module For Odoo 7.0
 </pre>
+
+
+<h3>项目地址</h3>
+
+
+<pre>
+项目地址: https://github.com/figol/web_scanner
+</pre>
+
+
+<h3>项目简介</h3>
 
 
 <pre>
@@ -34,6 +45,9 @@ web_scanner是一个典型的odoo web模块.
 3. odoo中, js调用python code的方法;
 4. 一个简单的扫描枪应用实例;
 </pre>
+
+
+<h3>注</h3>
 
 
 <pre>
