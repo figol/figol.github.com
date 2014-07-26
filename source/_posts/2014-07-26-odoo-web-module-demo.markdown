@@ -24,8 +24,8 @@ web_scanner是一个典型的odoo web模块.
 </pre>
 <h3>注</h3>
 <pre>
-	本模块适用于具有一定经验的odoo程序员学习.
-	前提知识: jquery, backbone, qweb
+本模块适用于具有一定经验的odoo程序员学习.
+前提知识: jquery, backbone, qweb
 </pre>
 <h3>参考资料</h3>
 <pre>
