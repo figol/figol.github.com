@@ -4,7 +4,7 @@
   <title><![CDATA[Category: odoo | Figol -- a stupid coder]]></title>
   <link href="http://figol.github.io/blog/categories/odoo/atom.xml" rel="self"/>
   <link href="http://figol.github.io/"/>
-  <updated>2014-07-26T17:35:38+08:00</updated>
+  <updated>2014-07-26T17:38:10+08:00</updated>
   <id>http://figol.github.io/</id>
   <author>
     <name><![CDATA[Figol Liu]]></name>
@@ -51,8 +51,8 @@ web_scanner是一个典型的odoo web模块.
 
 
 <pre>
-    本模块适用于具有一定经验的odoo程序员学习.
-    前提知识: jquery, backbone, qweb
+本模块适用于具有一定经验的odoo程序员学习.
+前提知识: jquery, backbone, qweb
 </pre>
 
 
